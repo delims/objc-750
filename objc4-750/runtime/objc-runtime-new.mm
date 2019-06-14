@@ -4531,8 +4531,7 @@ saveTemporaryString(char *str)
 * The returned memory is TEMPORARY. Print it or copy it immediately.
 * Locking: none
 **********************************************************************/
-const char *
-objc_class::nameForLogging()
+const char * objc_class::nameForLogging()
 {
     // Handle the easy case directly.
     if (isRealized()  ||  isFuture()) {

@@ -1107,7 +1107,7 @@ public:
     }
 };
 
-
+//struct默认成员是public访问权限
 struct objc_class : objc_object {
     // Class ISA;
     Class superclass;

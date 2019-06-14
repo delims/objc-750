@@ -1730,9 +1730,14 @@ _objc_rootAllocWithZone(Class cls, malloc_zone_t *zone)
 static ALWAYS_INLINE id
 callAlloc(Class cls, bool checkNil, bool allocWithZone=false)
 {
+//    checkNil && !cls 可能为假，用slowpath可以优化编译。
+//    当需要检查是不是nil 且 是nil的时候 直接返回 nil
+    
     if (slowpath(checkNil && !cls)) return nil;
 
 #if __OBJC2__
+//      !cls->ISA()->hasCustomAWZ() 可能为 true 。fastpath可以优化编译。
+    
     if (fastpath(!cls->ISA()->hasCustomAWZ())) {
         // No alloc/allocWithZone implementation. Go straight to the allocator.
         // fixme store hasCustomAWZ in the non-meta class and 

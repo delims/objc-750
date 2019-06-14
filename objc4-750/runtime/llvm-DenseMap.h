@@ -1071,7 +1071,7 @@ public:
     return Ptr != RHS.operator->();
   }
 
-  inline DenseMapIterator& operator++() {  // Preincrement
+  inline DenseMapIterator& operator++() {  // Preincrement这个
     ++Ptr;
     AdvancePastEmptyBuckets();
     return *this;

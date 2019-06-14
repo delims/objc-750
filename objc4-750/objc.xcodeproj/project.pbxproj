@@ -25,11 +25,12 @@
 		393CEAC60DC69E67000B69DE /* objc-references.h in Headers */ = {isa = PBXBuildFile; fileRef = 393CEAC50DC69E67000B69DE /* objc-references.h */; };
 		39ABD72312F0B61800D1054C /* objc-weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 39ABD71F12F0B61800D1054C /* objc-weak.h */; };
 		39ABD72412F0B61800D1054C /* objc-weak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39ABD72012F0B61800D1054C /* objc-weak.mm */; };
+		4F5B4F8A22A90E7900B06F9F /* test_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B4F8822A90E7900B06F9F /* test_c.cpp */; };
+		4F5B4F8C22A90F6200B06F9F /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B4F8B22A90F6200B06F9F /* main.mm */; };
 		7593EC58202248E50046AB96 /* objc-object.h in Headers */ = {isa = PBXBuildFile; fileRef = 7593EC57202248DF0046AB96 /* objc-object.h */; };
 		75A9504F202BAA0600D7D56F /* objc-locks-new.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A9504E202BAA0300D7D56F /* objc-locks-new.h */; };
 		75A95051202BAA9A00D7D56F /* objc-locks.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A95050202BAA9A00D7D56F /* objc-locks.h */; };
 		75A95053202BAC4100D7D56F /* objc-lockdebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A95052202BAC4100D7D56F /* objc-lockdebug.h */; };
-		761E76D421CA20320022EE21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 761E76D321CA20320022EE21 /* main.m */; };
 		76A00F8521C9D6A7004F2B28 /* reason.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A00F8421C9D6A7004F2B28 /* reason.h */; };
 		76A00F8621C9D6A7004F2B28 /* reason.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A00F8421C9D6A7004F2B28 /* reason.h */; };
 		76A00F8921C9D9D3004F2B28 /* dyld_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A00F8821C9D9D2004F2B28 /* dyld_priv.h */; };
@@ -179,12 +180,14 @@
 		393CEAC50DC69E67000B69DE /* objc-references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-references.h"; path = "runtime/objc-references.h"; sourceTree = "<group>"; };
 		39ABD71F12F0B61800D1054C /* objc-weak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-weak.h"; path = "runtime/objc-weak.h"; sourceTree = "<group>"; };
 		39ABD72012F0B61800D1054C /* objc-weak.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-weak.mm"; path = "runtime/objc-weak.mm"; sourceTree = "<group>"; };
+		4F5B4F8822A90E7900B06F9F /* test_c.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_c.cpp; sourceTree = "<group>"; };
+		4F5B4F8922A90E7900B06F9F /* test_c.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test_c.hpp; sourceTree = "<group>"; };
+		4F5B4F8B22A90F6200B06F9F /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		7593EC57202248DF0046AB96 /* objc-object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "objc-object.h"; path = "runtime/objc-object.h"; sourceTree = "<group>"; };
 		75A9504E202BAA0300D7D56F /* objc-locks-new.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "objc-locks-new.h"; path = "runtime/objc-locks-new.h"; sourceTree = "<group>"; };
 		75A95050202BAA9A00D7D56F /* objc-locks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-locks.h"; path = "runtime/objc-locks.h"; sourceTree = "<group>"; };
 		75A95052202BAC4100D7D56F /* objc-lockdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-lockdebug.h"; path = "runtime/objc-lockdebug.h"; sourceTree = "<group>"; };
 		761E76D121CA20320022EE21 /* myTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = myTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		761E76D321CA20320022EE21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76A00F8421C9D6A7004F2B28 /* reason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reason.h; sourceTree = "<group>"; };
 		76A00F8821C9D9D2004F2B28 /* dyld_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dyld_priv.h; sourceTree = "<group>"; };
 		76A00F8C21C9E440004F2B28 /* lock_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lock_private.h; sourceTree = "<group>"; };
@@ -395,7 +398,9 @@
 		761E76D221CA20320022EE21 /* myTest */ = {
 			isa = PBXGroup;
 			children = (
-				761E76D321CA20320022EE21 /* main.m */,
+				4F5B4F8B22A90F6200B06F9F /* main.mm */,
+				4F5B4F8822A90E7900B06F9F /* test_c.cpp */,
+				4F5B4F8922A90E7900B06F9F /* test_c.hpp */,
 			);
 			path = myTest;
 			sourceTree = "<group>";
@@ -785,7 +790,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				761E76D421CA20320022EE21 /* main.m in Sources */,
+				4F5B4F8C22A90F6200B06F9F /* main.mm in Sources */,
+				4F5B4F8A22A90E7900B06F9F /* test_c.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
