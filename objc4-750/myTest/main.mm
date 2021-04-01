@@ -50,6 +50,9 @@ int main(int argc, const char * argv[]) {
         
 //        run();
         
+        SEL sel = @selector(selector);
+        SEL sel2 = sel;
+        
         printf("\n");
         printf("\n");
         printf("\n");

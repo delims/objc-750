@@ -224,9 +224,7 @@ struct method_t {
     const char *types;
     MethodListIMP imp;
 
-    struct SortBySELAddress :
-        public std::binary_function<const method_t&,
-                                    const method_t&, bool>
+    struct SortBySELAddress :public std::binary_function<const method_t&, const method_t&, bool>
     {
         bool operator() (const method_t& lhs,
                          const method_t& rhs)
@@ -1109,7 +1107,7 @@ public:
 
 //struct默认成员是public访问权限
 struct objc_class : objc_object {
-    // Class ISA;
+//    Class ISA;
     Class superclass;
     cache_t cache;             // formerly cache pointer and vtable
     class_data_bits_t bits;    // class_rw_t * plus custom rr/alloc flags
